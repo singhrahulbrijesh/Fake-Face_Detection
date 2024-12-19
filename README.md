@@ -28,7 +28,8 @@ Required Python libraries (listed in requirements.txt)
 Installation
 
 ## Clone the repository:
-git clone https://github.com/yourusername/fake-face-detection.git
+git clone -> https://github.com/singhrahulbrijesh/fake-face-detection.git
+
 cd fake-face-detection
 
 ## Install dependencies:
