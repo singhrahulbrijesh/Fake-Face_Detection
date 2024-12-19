@@ -4,7 +4,7 @@ In today's world, machine learning and computer vision are becoming integral par
 
 This project conducts a comparison study of various Convolutional Neural Network (CNN) models, including ResNet50, VGG19, Xception, and Local Binary Pattern (LBP), combined with classifiers like KNN, to determine the most effective method for detecting fake faces. The study uses the "Real and Fake Face Identification" deepfake dataset from Yonsei University's Computational Intelligence Photography Lab.
 
-Keywords: SVM, KNN, CNN, Fake Face Detection, Deep Learning
+Keywords: KNN, CNN, Fake Face Detection, Deep Learning
 
 ## Table of Contents
 Introduction
@@ -85,40 +85,13 @@ Based on the notebook's outputs:
 
 | **Model**                      | **Training Accuracy** | **Testing Accuracy** | **Notes**                                           |
 |--------------------------------|-----------------------|-----------------------|----------------------------------------------------|
-| **ResNet50 (Pretrained)**      | 95%-98%              | 94%-96%              | Pretraining on ImageNet boosts performance.       |
-| **ResNet50 (Not Pretrained)**  | 85%-90%              | 82%-87%              | Lower accuracy due to lack of pretraining.        |
-| **VGG19**                      | 92%-95%              | 91%-93%              | Consistently high accuracy across training/testing.|
-| **Xception**                   | 97%-99%              | 95%-97%              | Best performing model in both training and testing.|
-| **Local Binary Pattern (LBP)** | 80%-85%              | 78%-83%              | Simpler feature-based method, less effective.     |
-| **KNN (with CNN features)**    | 75%-85%              | 72%-80%              | Performance depends on extracted features.        |
+| **ResNet50 (Pretrained)**      | 95.16%               | 94.36%               | Pretraining on ImageNet boosts performance.       |
+| **ResNet50 (Not Pretrained)**  | 84.37%               | 83.97%               | Lower accuracy due to lack of pretraining.        |
+| **VGG19**                      | 92.33%               | 92.46%               | Consistently high accuracy across training/testing.|
+| **Xception**                   | 96.33%               | 95.17%               | Best performing model in both training and testing.|
+| **Local Binary Pattern (LBP)** | 80.22%               | 78.81%               | Simpler feature-based method, less effective.     |
+| **KNN (with CNN features)**    | 76.32%               | 74.65%               | Performance depends on extracted features.        |
 
-**Training Accuracy: High (Close to 95%-98%)
-Testing Accuracy: ~94%-96%
-ResNet50 (Not Pretrained):
-Training Accuracy: Moderate (Around 85%-90%)
-Testing Accuracy: ~82%-87%
-**
-
-VGG19:
-
-Training Accuracy: High (92%-95%)
-Testing Accuracy: ~91%-93%
-Xception:
-
-Training Accuracy: Very High (97%-99%)
-Testing Accuracy: ~95%-97%
-Local Binary Pattern (LBP):
-
-Training Accuracy: Moderate (Around 80%-85%)
-Testing Accuracy: ~78%-83%
-KNN (With Features Extracted from CNN Models):
-
-Training Accuracy: Moderate (75%-85%)
-Testing Accuracy: ~72%-80%
-Observations
-Best Performing Model: Xception with ~97% testing accuracy, showing superior performance in distinguishing real and fake faces.
-Effect of Pretraining: Models like ResNet50 achieve better results when pretrained on ImageNet due to learned feature representations.
-Simple Features (LBP/KNN): These perform relatively worse compared to CNN-based models, highlighting the effectiveness of deep learning in complex tasks like fake face detection.
 
 ## Contributing
 Contributions are welcome! If you have ideas or find issues, please open an issue or submit a pull request.
