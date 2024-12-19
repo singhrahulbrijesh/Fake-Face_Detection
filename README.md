@@ -4,7 +4,7 @@ In today's world, machine learning and computer vision are becoming integral par
 
 This project conducts a comparison study of various Convolutional Neural Network (CNN) models, including ResNet50, VGG19, Xception, and Local Binary Pattern (LBP), combined with classifiers like KNN, to determine the most effective method for detecting fake faces. The study uses the "Real and Fake Face Identification" deepfake dataset from Yonsei University's Computational Intelligence Photography Lab.
 
-## Keywords: SVM, KNN, CNN, Fake Face Detection, Deep Learning
+Keywords: SVM, KNN, CNN, Fake Face Detection, Deep Learning
 
 ## Table of Contents
 Introduction
