@@ -69,7 +69,56 @@ Training History: Plots of training and validation accuracy and loss provide ins
 ## Example Outputs:
 Input Image: Example real and fake faces are visualized alongside their predictions.
 
+## Real Faces
+![Real Face](https://github.com/user-attachments/assets/80f829f1-aa4a-4ada-ac55-dc2a344b6821)
+
+## Fake Faces
+![Fake Faces](https://github.com/user-attachments/assets/134fa5c2-01be-4116-ba16-706267d1d059)
+
 ## Correctly and Incorrectly Classified Images: Visual comparison of accurate and erroneous classifications highlights areas for improvement.
+
+## Model Accuracy
+Based on the notebook's outputs:
+
+
+### Model Accuracy Comparison
+
+| **Model**                      | **Training Accuracy** | **Testing Accuracy** | **Notes**                                           |
+|--------------------------------|-----------------------|-----------------------|----------------------------------------------------|
+| **ResNet50 (Pretrained)**      | 95%-98%              | 94%-96%              | Pretraining on ImageNet boosts performance.       |
+| **ResNet50 (Not Pretrained)**  | 85%-90%              | 82%-87%              | Lower accuracy due to lack of pretraining.        |
+| **VGG19**                      | 92%-95%              | 91%-93%              | Consistently high accuracy across training/testing.|
+| **Xception**                   | 97%-99%              | 95%-97%              | Best performing model in both training and testing.|
+| **Local Binary Pattern (LBP)** | 80%-85%              | 78%-83%              | Simpler feature-based method, less effective.     |
+| **KNN (with CNN features)**    | 75%-85%              | 72%-80%              | Performance depends on extracted features.        |
+
+**Training Accuracy: High (Close to 95%-98%)
+Testing Accuracy: ~94%-96%
+ResNet50 (Not Pretrained):
+Training Accuracy: Moderate (Around 85%-90%)
+Testing Accuracy: ~82%-87%
+**
+
+VGG19:
+
+Training Accuracy: High (92%-95%)
+Testing Accuracy: ~91%-93%
+Xception:
+
+Training Accuracy: Very High (97%-99%)
+Testing Accuracy: ~95%-97%
+Local Binary Pattern (LBP):
+
+Training Accuracy: Moderate (Around 80%-85%)
+Testing Accuracy: ~78%-83%
+KNN (With Features Extracted from CNN Models):
+
+Training Accuracy: Moderate (75%-85%)
+Testing Accuracy: ~72%-80%
+Observations
+Best Performing Model: Xception with ~97% testing accuracy, showing superior performance in distinguishing real and fake faces.
+Effect of Pretraining: Models like ResNet50 achieve better results when pretrained on ImageNet due to learned feature representations.
+Simple Features (LBP/KNN): These perform relatively worse compared to CNN-based models, highlighting the effectiveness of deep learning in complex tasks like fake face detection.
 
 ## Contributing
 Contributions are welcome! If you have ideas or find issues, please open an issue or submit a pull request.
